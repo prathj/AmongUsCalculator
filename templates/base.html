@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+          crossorigin="anonymous">
+    <meta charset="UTF-8">
+    <title>{%  block content %}{% endblock %}</title>
+    </head>
+    <body style = "background: url(https://i.imgur.com/YDzxnyF.jpg);
+                    background-size: 19% 76%;">
+
+        <h1 style="text-align:center; margin-bottom:-20px"><img src="https://i.imgur.com/nKCS6d4.jpg" alt="Title" width="600" height="auto"></h1>
+        <p style="color:white; font-size:70px; font-family:Monaco,sans-serif; text-align:center; margin-bottom:50px">Win Calculator</p>
+        <p style="color:#a7a8a5; font-size:17px; font-family:Monaco,sans-serif; text-align:center; margin-left:150px; margin-right:150px">Our project is based on the popular game “Among Us”, which involves up to 10 players who run around in a spaceship and are each assigned the role of “Crewmate” or “Imposter”. As crewmate, you are give a list of tasks to do and/or vote off imposters, though its possible to vote out crewmates who they thought were imposters.
+            If you are unsure who is the imposter it's possible to skip the voting procedure or simply not vote. However, if you find someone suspicious, you may cast your vote for them, and if someone receives the majority of the votes, they are thrown out of the spaceship and become a ghost. Ghosts are still able to do tasks and are faster than regular crewmates
+            and can phase through walls. Imposter ghosts cannot kill, but can still sabotage. As imposter, you have to kill crewmates and avoid being caught. The crewmates win by either doing all the tasks or voting off all the imposters, and the imposters win by killing off a certain amount of crewmates. In the start of the game the crewmates are not aware who the imposter(s) is while the imposter is aware of every member's identity. Imposters are unable to do normal tasks and tend to fake doing the tasks to blend in as a crewmate. </p>
+        <h2 style="color:white; font-size:50px; text-align:center">Role Type:</h2>
+
+        <form action="#" method="get" style="text-align:center">
+            <input type="radio" id="imposter" name="role" value="imposter">
+            <label for="imposter" style="color:red; font-size:25px; text-align:center">Imposter</label><br>
+            <input type="radio" id="crewmate" name="role" value="crewmate">
+            <label for="crewmate" style="color:greenyellow; font-size:25px; text-align:center">Crewmate</label><br>
+            <input type="submit" value="Submit" style="font-size:20px">
+        </form>
+
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+            crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+            integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+            crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+            integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+            crossorigin="anonymous"></script>
+    </body>
+</html>
+
+

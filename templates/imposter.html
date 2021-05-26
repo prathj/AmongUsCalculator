@@ -1,0 +1,13 @@
+{%  extends "index.html" %}
+{% block stats %}
+    <h2 style="color:white; font-size:50px; text-align:center;">Role Type:</h2><h2 style="margin-bottom:15px; margin-top:-11px; color:red; font-size:50px; text-align:center">Imposter</h2>
+    <form action="/imposterdata" method="post" style="text-align:center">
+        <input type="text" id="crewkilled" name="crewkilled" style="margin-left:6px">
+        <label for="crewkilled" style="color:white; font-size:25px; text-align:center"># of Crewmates Killed</label><br>
+        <input type="text" id="time" name="time" style="margin-left:315px">
+        <label for="time" style="color:white; font-size:25px; text-align:center">Game Time Elapsed (Enter [minutes]m [seconds]s)</label><br>
+        <input type="text" id="ejected" name="ejected" style="margin-left:17px">
+        <label for="ejected" style="color:white; font-size:25px; text-align:center">Ejected? (Enter Yes/No)</label><br>
+        <input type="submit" value="Submit" style="font-size:20px; color:red">
+    </form>
+        {% endblock %}

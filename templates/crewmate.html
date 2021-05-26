@@ -1,0 +1,21 @@
+{%  extends "index.html" %}
+{% block stats %}
+    <h2 style="color:white; font-size:50px; text-align:center;">Role Type:</h2><h2 style="margin-bottom:15px; margin-top:-11px; color:greenyellow; font-size:50px; text-align:center">Crewmate</h2>
+    <form action="/crewdata" method="post" style="text-align:center">
+        <input type="text" id="tasks" name="tasks">
+        <label for="tasks" style="color:white; font-size:25px; text-align:center"># of Tasks Completed</label><br>
+        <input type="text" id="completed" name="completed" style="margin-left:157px">
+        <label for="completed" style="color:white; font-size:25px; text-align:center">All Tasks Completed? (Enter Yes/No)</label><br>
+        <input type="text" id="killed" name="killed" style="margin-left:171px">
+        <label for="killed" style="color:white; font-size:25px; text-align:center">Have You Been Killed? (Enter Yes/No)</label><br>
+        <input type="text" id="time" name="time" style="margin-left:310px">
+        <label for="time" style="color:white; font-size:25px; text-align:center">Game Time Elapsed (Enter [minutes]m [seconds]s)</label><br>
+        <input type="text" id="ejected" name="ejected" style="margin-left:16px">
+        <label for="ejected" style="color:white; font-size:25px; text-align:center">Ejected? (Enter Yes/No)</label><br>
+        <input type="text" id="sabotages" name="sabotages" style="margin-left:-10px">
+        <label for="sabotages" style="color:white; font-size:25px; text-align:center"># of Sabotages Fixed</label><br>
+        <input type="submit" value="Submit" style="font-size:20px; color:green; margin-bottom: 15px">
+    </form>
+        {% endblock %}
+{% block percent %}
+{% endblock %}
